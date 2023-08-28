@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cidades esquecidas</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav
+      class="col-12- navbar navbar-expand-lg bg-dark fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#carouselExample"> CIDADES ESQUECIDAS </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Sobre">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!--CARROSSEL-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/cidade01.webp" class="d-block w-100" alt="..." />
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/cidade02.webp" class="d-block w-100" alt="..." />
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/cidade03.webp" class="d-block w-100" alt="..." />
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <section class="container-fluid" style="margin-top: 3%">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card">
+                <img src="img/cidade01.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Uma cidade desconhecida</h5>
+                  <p class="card-text">Com toda certeza é uma das cidades.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1"
+                  >
+                    Expandir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal 1 -->
+            <div
+              class="modal fade"
+              id="modal1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="modalLabel1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">
+                      Uma cidade desconhecida
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="img/cidade01.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <h5 class="modal-title" id="modalLabel1">A cidade</h5>
+                    <p class="card-text">Com toda certeza é uma das cidades.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fechar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card">
+                <img src="img/cidade02.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Uma cidade desconhecida</h5>
+                  <p class="card-text">Com toda certeza é uma das cidades.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal2"
+                  >
+                    Expandir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal 2-->
+            <div
+              class="modal fade"
+              id="modal2"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="modalLabel1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">
+                      Uma cidade desconhecida
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="img/cidade02.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <h5 class="modal-title" id="modalLabel1">A cidade</h5>
+                    <p class="card-text">Com toda certeza é uma das cidades.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fechar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card">
+                <img src="img/cidade03.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Uma cidade desconhecida</h5>
+                  <p class="card-text">Com toda certeza é uma das cidades.</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal3"
+                  >
+                    Expandir
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div
+              class="modal fade"
+              id="modal3"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="modalLabel1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">
+                      Uma cidade desconhecida
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="img/cidade03.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <h5 class="modal-title" id="modalLabel1">A cidade</h5>
+                    <p class="card-text">Com toda certeza é uma das cidades.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fechar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container-fluid bg-dark"
+        style="margin-top: 3%"
+        id="Sobre"
+      >
+        <br /><br />
+        <hr class="col-11 m-auto" />
+        <div class="col-11 m-auto">
+          <h2 class="text-center text-white">Sobre</h2>
+          <p class="text-white">
+            Bem-vindo ao emocionante mundo dos Desbravadores Urbanos, onde a
+            curiosidade nos leva a explorar o desconhecido e revelar os segredos
+            ocultos de cidades que muitos ainda não tiveram a chance de
+            descobrir. Nossa comunidade apaixonada de aventureiros urbanos está
+            sempre em busca da próxima cidade misteriosa para desvendar, das
+            ruas menos percorridas aos recantos mais intrigantes. Somos os
+            contadores de histórias das metrópoles desconhecidas, os
+            observadores das maravilhas urbanas ainda não exploradas. Nossos
+            destemidos viajantes compartilham suas jornadas enquanto se entregam
+            a bairros inexplorados, arquitetura surpreendente e a rica tapeçaria
+            cultural que define cada cidade única. Através de olhares atentos e
+            passos destemidos, revelamos o que muitos negligenciaram. Junte-se a
+            nós enquanto traçamos novos caminhos, mergulhamos em aventuras
+            urbanas e capturamos a essência das cidades menos conhecidas. Se
+            você é movido pela sede de descoberta, pela paixão por desafiar o
+            convencional e pelo desejo de compartilhar as maravilhas que
+            encontramos, você é um verdadeiro Desbravador Urbano. Junte-se a nós
+            nessa jornada para desvendar o fascínio oculto das cidades que
+            esperam para serem exploradas.
+          </p>
+        </div>
+        <hr class="col-11 m-auto" />
+        <br /><br />
+      </section>
+
+      <footer
+        id="footer"
+        class="page-footer p-2 col-xxl-1 m-auto w-100"
+        style="background-color: #333"
+      >
+        <div class="text-center">
+          <a href="" style="color: whitesmoke; text-decoration: none"
+            >@2023 Copyright: Gustavo Cavalcanti</a
+          >
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
